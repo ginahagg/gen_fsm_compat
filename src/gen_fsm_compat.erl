@@ -162,6 +162,9 @@
 -callback code_change(OldVsn :: term() | {down, term()}, StateName :: atom(),
 		      StateData :: term(), Extra :: term()) ->
     {ok, NextStateName :: atom(), NewStateData :: term()}.
+
+-ifndef('17.0').
+%% We don't have format_status in R16
 -callback format_status(Opt, StatusData) -> Status when
       Opt :: 'normal' | 'terminate',
       StatusData :: [PDict | State],
@@ -170,6 +173,7 @@
       Status :: term().
 
 -optional_callbacks([format_status/2]).
+-endif.
 
 %%% ---------------------------------------------------
 %%% Starts a generic state machine.
