@@ -1,7 +1,15 @@
 gen_fsm_compat
 =====
 
-This is a copy of erlangs (19.3) gen_fsm. With `gen_fsm` being deprecated this will allow projects that use it to go forward without problems and backwards compatibility issues.
+This is a copy of erlangs gen_fsm. With `gen_fsm` being deprecated this will allow projects that use it to go forward without problems and backwards compatibility issues.
+
+It supports the following version and compiles the to the version appropriate gen_fsm.
+
+* 20 (deprecation warnings removed)
+* 19
+* 18
+* 17
+* 16b02
 
 Usage
 -----
