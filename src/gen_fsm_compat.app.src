@@ -1,6 +1,6 @@
 {application, gen_fsm_compat,
  [{description, "gen_fsm backwards compatibility"},
-  {vsn, "0.1.0"},
+  {vsn, "0.1.1"},
   {registered, []},
   {applications,
    [kernel,
